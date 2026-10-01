@@ -1,0 +1,34 @@
+[
+  {
+    "id": "DOC-001",
+    "clinicId": "CLINIC-001",
+    "displayName": "นพ. สาธิต เมตตา",
+    "specialty": "General Practice",
+    "publicBio": "แพทย์เวชปฏิบัติทั่วไป ให้คำปรึกษาอาการเจ็บป่วยเบื้องต้นและติดตามอาการทั่วไป",
+    "active": true
+  },
+  {
+    "id": "DOC-002",
+    "clinicId": "CLINIC-001",
+    "displayName": "พญ. ตัวอย่าง สุขใจ",
+    "specialty": "Internal Medicine",
+    "publicBio": "แพทย์อายุรกรรม ดูแลภาวะเจ็บป่วยของผู้ใหญ่และโรคทั่วไปที่ต้องติดตามต่อเนื่อง",
+    "active": true
+  },
+  {
+    "id": "DOC-003",
+    "clinicId": "CLINIC-001",
+    "displayName": "พญ. จำลอง อารี",
+    "specialty": "Pediatrics",
+    "publicBio": "กุมารแพทย์ ให้บริการตรวจอาการทั่วไปและติดตามสุขภาพเด็กในบริบทการสาธิต",
+    "active": true
+  },
+  {
+    "id": "DOC-004",
+    "clinicId": "CLINIC-001",
+    "displayName": "นพ. ทดสอบ ใจดี",
+    "specialty": "Dermatology",
+    "publicBio": "แพทย์ผิวหนัง ให้คำปรึกษาปัญหาผิวหนังทั่วไปสำหรับข้อมูลจำลองของระบบ",
+    "active": true
+  }
+]

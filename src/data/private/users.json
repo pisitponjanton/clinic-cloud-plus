@@ -1,0 +1,57 @@
+[
+  {
+    "id": "USR-OWNER-001",
+    "clinicId": "CLINIC-001",
+    "email": "owner@cliniccloud.demo",
+    "displayName": "Demo Owner",
+    "role": "OWNER",
+    "passwordHash": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "linkedPatientId": null,
+    "linkedDoctorId": null,
+    "active": true
+  },
+  {
+    "id": "USR-STAFF-001",
+    "clinicId": "CLINIC-001",
+    "email": "staff@cliniccloud.demo",
+    "displayName": "Demo Staff",
+    "role": "STAFF",
+    "passwordHash": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "linkedPatientId": null,
+    "linkedDoctorId": null,
+    "active": true
+  },
+  {
+    "id": "USR-DOCTOR-001",
+    "clinicId": "CLINIC-001",
+    "email": "doctor@cliniccloud.demo",
+    "displayName": "Demo Doctor",
+    "role": "DOCTOR",
+    "passwordHash": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "linkedPatientId": null,
+    "linkedDoctorId": "DOC-001",
+    "active": true
+  },
+  {
+    "id": "USR-NURSE-001",
+    "clinicId": "CLINIC-001",
+    "email": "nurse@cliniccloud.demo",
+    "displayName": "Demo Nurse",
+    "role": "NURSE",
+    "passwordHash": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "linkedPatientId": null,
+    "linkedDoctorId": null,
+    "active": true
+  },
+  {
+    "id": "USR-PATIENT-001",
+    "clinicId": "CLINIC-001",
+    "email": "patient@cliniccloud.demo",
+    "displayName": "สมชาย ใจดี",
+    "role": "PATIENT",
+    "passwordHash": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+    "linkedPatientId": "PAT-001",
+    "linkedDoctorId": null,
+    "active": true
+  }
+]

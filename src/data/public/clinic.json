@@ -1,0 +1,39 @@
+{
+  "id": "CLINIC-001",
+  "name": "Clinic Cloud + Demo Clinic",
+  "description": "คลินิกจำลองสำหรับการสาธิต Clinic Cloud + Mockup MVP",
+  "phone": "02-000-0000",
+  "address": "Bangkok, Thailand",
+  "openingHours": [
+    {
+      "day": "MONDAY",
+      "open": "09:00",
+      "close": "18:00"
+    },
+    {
+      "day": "TUESDAY",
+      "open": "09:00",
+      "close": "18:00"
+    },
+    {
+      "day": "WEDNESDAY",
+      "open": "09:00",
+      "close": "18:00"
+    },
+    {
+      "day": "THURSDAY",
+      "open": "09:00",
+      "close": "18:00"
+    },
+    {
+      "day": "FRIDAY",
+      "open": "09:00",
+      "close": "18:00"
+    },
+    {
+      "day": "SATURDAY",
+      "open": "09:00",
+      "close": "16:00"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "PROMO-001",
+    "clinicId": "CLINIC-001",
+    "title": "Demo General Checkup Offer",
+    "description": "ลดค่าบริการตรวจทั่วไป 100 บาท สำหรับข้อมูลสาธิตของ Clinic Cloud +",
+    "serviceIds": ["SVC-001"],
+    "startDate": "2026-09-01",
+    "endDate": "2026-12-31",
+    "active": true
+  },
+  {
+    "id": "PROMO-002",
+    "clinicId": "CLINIC-001",
+    "title": "Demo Annual Health Package",
+    "description": "รับส่วนลด 10% สำหรับบริการตรวจสุขภาพประจำปีในช่วงเวลาที่กำหนด",
+    "serviceIds": ["SVC-006"],
+    "startDate": "2026-10-01",
+    "endDate": "2026-11-30",
+    "active": true
+  },
+  {
+    "id": "PROMO-003",
+    "clinicId": "CLINIC-001",
+    "title": "Demo Online Consultation Offer",
+    "description": "ค่าบริการปรึกษาสุขภาพออนไลน์ 350 บาท สำหรับโปรโมชั่นตัวอย่างนี้",
+    "serviceIds": ["SVC-008"],
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-31",
+    "active": false
+  }
+]

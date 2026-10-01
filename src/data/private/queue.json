@@ -1,0 +1,82 @@
+[
+  {
+    "id": "QUEUE-001",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-001",
+    "appointmentId": "APT-001",
+    "doctorId": "DOC-001",
+    "queueNumber": "A001",
+    "status": "WAITING",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "QUEUE-002",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-002",
+    "appointmentId": "APT-004",
+    "doctorId": "DOC-002",
+    "queueNumber": "A002",
+    "status": "CALLED",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "QUEUE-003",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-003",
+    "appointmentId": "APT-005",
+    "doctorId": "DOC-003",
+    "queueNumber": "A003",
+    "status": "IN_SERVICE",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "QUEUE-004",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-004",
+    "appointmentId": "APT-006",
+    "doctorId": "DOC-004",
+    "queueNumber": "A004",
+    "status": "WAITING",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "QUEUE-005",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-005",
+    "appointmentId": "APT-007",
+    "doctorId": "DOC-001",
+    "queueNumber": "A005",
+    "status": "WAITING",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "QUEUE-006",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-006",
+    "appointmentId": "APT-008",
+    "doctorId": "DOC-002",
+    "queueNumber": "A006",
+    "status": "CALLED",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "QUEUE-007",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-007",
+    "appointmentId": "APT-009",
+    "doctorId": "DOC-003",
+    "queueNumber": "A007",
+    "status": "WAITING",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "QUEUE-008",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-008",
+    "appointmentId": "APT-010",
+    "doctorId": "DOC-004",
+    "queueNumber": "A008",
+    "status": "WAITING",
+    "date": "2026-10-01"
+  }
+]

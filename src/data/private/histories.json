@@ -1,0 +1,272 @@
+[
+  {
+    "id": "HIST-001",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-001",
+    "doctorId": "DOC-002",
+    "appointmentId": "APT-002",
+    "date": "2026-09-15",
+    "summary": "Synthetic demo follow-up history for the A/B scenario. No real clinical information."
+  },
+  {
+    "id": "HIST-002",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-002",
+    "doctorId": "DOC-002",
+    "appointmentId": null,
+    "date": "2026-08-02",
+    "summary": "Synthetic demo clinical history entry 2. No real clinical information."
+  },
+  {
+    "id": "HIST-003",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-003",
+    "doctorId": "DOC-003",
+    "appointmentId": null,
+    "date": "2026-08-03",
+    "summary": "Synthetic demo clinical history entry 3. No real clinical information."
+  },
+  {
+    "id": "HIST-004",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-004",
+    "doctorId": "DOC-004",
+    "appointmentId": null,
+    "date": "2026-08-04",
+    "summary": "Synthetic demo clinical history entry 4. No real clinical information."
+  },
+  {
+    "id": "HIST-005",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-005",
+    "doctorId": "DOC-001",
+    "appointmentId": null,
+    "date": "2026-08-05",
+    "summary": "Synthetic demo clinical history entry 5. No real clinical information."
+  },
+  {
+    "id": "HIST-006",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-006",
+    "doctorId": "DOC-002",
+    "appointmentId": null,
+    "date": "2026-08-06",
+    "summary": "Synthetic demo clinical history entry 6. No real clinical information."
+  },
+  {
+    "id": "HIST-007",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-007",
+    "doctorId": "DOC-003",
+    "appointmentId": null,
+    "date": "2026-08-07",
+    "summary": "Synthetic demo clinical history entry 7. No real clinical information."
+  },
+  {
+    "id": "HIST-008",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-008",
+    "doctorId": "DOC-004",
+    "appointmentId": null,
+    "date": "2026-08-08",
+    "summary": "Synthetic demo clinical history entry 8. No real clinical information."
+  },
+  {
+    "id": "HIST-009",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-009",
+    "doctorId": "DOC-001",
+    "appointmentId": null,
+    "date": "2026-08-09",
+    "summary": "Synthetic demo clinical history entry 9. No real clinical information."
+  },
+  {
+    "id": "HIST-010",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-010",
+    "doctorId": "DOC-002",
+    "appointmentId": null,
+    "date": "2026-08-10",
+    "summary": "Synthetic demo clinical history entry 10. No real clinical information."
+  },
+  {
+    "id": "HIST-011",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-011",
+    "doctorId": "DOC-003",
+    "appointmentId": "APT-011",
+    "date": "2026-08-11",
+    "summary": "Synthetic demo clinical history entry 11. No real clinical information."
+  },
+  {
+    "id": "HIST-012",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-012",
+    "doctorId": "DOC-004",
+    "appointmentId": "APT-012",
+    "date": "2026-08-12",
+    "summary": "Synthetic demo clinical history entry 12. No real clinical information."
+  },
+  {
+    "id": "HIST-013",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-013",
+    "doctorId": "DOC-001",
+    "appointmentId": "APT-013",
+    "date": "2026-08-13",
+    "summary": "Synthetic demo clinical history entry 13. No real clinical information."
+  },
+  {
+    "id": "HIST-014",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-014",
+    "doctorId": "DOC-002",
+    "appointmentId": "APT-014",
+    "date": "2026-08-14",
+    "summary": "Synthetic demo clinical history entry 14. No real clinical information."
+  },
+  {
+    "id": "HIST-015",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-015",
+    "doctorId": "DOC-003",
+    "appointmentId": "APT-015",
+    "date": "2026-08-15",
+    "summary": "Synthetic demo clinical history entry 15. No real clinical information."
+  },
+  {
+    "id": "HIST-016",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-016",
+    "doctorId": "DOC-004",
+    "appointmentId": "APT-016",
+    "date": "2026-09-16",
+    "summary": "Synthetic demo clinical history entry 16. No real clinical information."
+  },
+  {
+    "id": "HIST-017",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-017",
+    "doctorId": "DOC-001",
+    "appointmentId": "APT-017",
+    "date": "2026-09-17",
+    "summary": "Synthetic demo clinical history entry 17. No real clinical information."
+  },
+  {
+    "id": "HIST-018",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-018",
+    "doctorId": "DOC-002",
+    "appointmentId": "APT-018",
+    "date": "2026-09-18",
+    "summary": "Synthetic demo clinical history entry 18. No real clinical information."
+  },
+  {
+    "id": "HIST-019",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-019",
+    "doctorId": "DOC-003",
+    "appointmentId": null,
+    "date": "2026-09-19",
+    "summary": "Synthetic demo clinical history entry 19. No real clinical information."
+  },
+  {
+    "id": "HIST-020",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-020",
+    "doctorId": "DOC-004",
+    "appointmentId": null,
+    "date": "2026-09-20",
+    "summary": "Synthetic demo clinical history entry 20. No real clinical information."
+  },
+  {
+    "id": "HIST-021",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-001",
+    "doctorId": "DOC-002",
+    "appointmentId": "APT-002",
+    "date": "2026-09-21",
+    "summary": "Synthetic demo clinical history entry 21. No real clinical information."
+  },
+  {
+    "id": "HIST-022",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-002",
+    "doctorId": "DOC-002",
+    "appointmentId": null,
+    "date": "2026-09-22",
+    "summary": "Synthetic demo clinical history entry 22. No real clinical information."
+  },
+  {
+    "id": "HIST-023",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-003",
+    "doctorId": "DOC-003",
+    "appointmentId": null,
+    "date": "2026-09-23",
+    "summary": "Synthetic demo clinical history entry 23. No real clinical information."
+  },
+  {
+    "id": "HIST-024",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-004",
+    "doctorId": "DOC-004",
+    "appointmentId": null,
+    "date": "2026-09-24",
+    "summary": "Synthetic demo clinical history entry 24. No real clinical information."
+  },
+  {
+    "id": "HIST-025",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-005",
+    "doctorId": "DOC-001",
+    "appointmentId": null,
+    "date": "2026-09-25",
+    "summary": "Synthetic demo clinical history entry 25. No real clinical information."
+  },
+  {
+    "id": "HIST-026",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-006",
+    "doctorId": "DOC-002",
+    "appointmentId": null,
+    "date": "2026-09-26",
+    "summary": "Synthetic demo clinical history entry 26. No real clinical information."
+  },
+  {
+    "id": "HIST-027",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-007",
+    "doctorId": "DOC-003",
+    "appointmentId": null,
+    "date": "2026-09-27",
+    "summary": "Synthetic demo clinical history entry 27. No real clinical information."
+  },
+  {
+    "id": "HIST-028",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-008",
+    "doctorId": "DOC-004",
+    "appointmentId": null,
+    "date": "2026-09-01",
+    "summary": "Synthetic demo clinical history entry 28. No real clinical information."
+  },
+  {
+    "id": "HIST-029",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-009",
+    "doctorId": "DOC-001",
+    "appointmentId": null,
+    "date": "2026-09-02",
+    "summary": "Synthetic demo clinical history entry 29. No real clinical information."
+  },
+  {
+    "id": "HIST-030",
+    "clinicId": "CLINIC-001",
+    "patientId": "PAT-010",
+    "doctorId": "DOC-002",
+    "appointmentId": null,
+    "date": "2026-09-03",
+    "summary": "Synthetic demo clinical history entry 30. No real clinical information."
+  }
+]
