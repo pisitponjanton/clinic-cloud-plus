@@ -201,6 +201,12 @@ describe("Staff MCP OAuth-compatible auth foundation", () => {
 
     expect(response.status).toBe(200);
     expect(response.headers.get("content-type")).toContain("text/html");
+    expect(response.headers.get("content-security-policy")).toContain(
+      "form-action 'self' https://client.example;",
+    );
+    expect(response.headers.get("content-security-policy")).not.toContain(
+      "form-action 'self' https:;",
+    );
 
     const html = await response.text();
 
@@ -210,6 +216,20 @@ describe("Staff MCP OAuth-compatible auth foundation", () => {
     expect(html).toContain("12345678");
     expect(html).toContain('list="personnel-demo-accounts"');
     expect(html).not.toContain("access_token");
+  });
+
+  it("does not authorize an unregistered callback origin", async () => {
+    const clientId = await registerClient();
+    const url = new URL(authorizeUrl(clientId));
+    url.searchParams.set("redirect_uri", "https://unregistered.example/callback");
+
+    const response = await handleStaffAuthorizationGet(
+      new Request(url),
+      TEST_SECRET,
+    );
+
+    expect(response.status).toBe(400);
+    expect(await response.json()).toMatchObject({ error: "invalid_request" });
   });
 
   it("rejects a wrong autofilled password without dropping the demo login guidance", async () => {
@@ -230,6 +250,9 @@ describe("Staff MCP OAuth-compatible auth foundation", () => {
 
     expect(response.status).toBe(401);
     expect(response.headers.get("location")).toBeNull();
+    expect(response.headers.get("content-security-policy")).toContain(
+      "form-action 'self' https://client.example;",
+    );
     const html = await response.text();
     expect(html).toContain("Invalid credentials or this account cannot authorize Staff MCP.");
     expect(html).toContain("Demo password:");

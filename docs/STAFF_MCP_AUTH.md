@@ -94,6 +94,20 @@ Token exchange revalidates:
 - current Base user role
 - personnel-role membership
 
+## Authorization form Content Security Policy
+
+The OAuth authorization form posts to the same-origin `/oauth/authorize` route, which
+returns an HTTP 302 to the registered MCP client callback after successful login.
+Some browsers apply the `form-action` CSP restriction to redirects after form
+submission. A strict `form-action 'self'` therefore blocked successful ChatGPT/Claude
+authorization even when the credentials were correct.
+
+The authorization form now uses `form-action 'self' <approved callback origin>`.
+The approved origin is derived only from the redirect URI matched against the
+signed registered client during OAuth request validation. Invalid redirect URIs
+are rejected before rendering the form. No wildcard HTTPS origin is permitted.
+The same CSP is used when invalid credentials re-render the authorization form.
+
 ## Access token contract
 
 Signed access tokens contain trusted claims including:

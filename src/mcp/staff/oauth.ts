@@ -340,14 +340,18 @@ function authorizationHtml(
 </html>`;
 }
 
-function html(body: string, status = 200): Response {
+function html(body: string, approvedRedirectUri: string, status = 200): Response {
+  // Browsers can enforce form-action on the POST /oauth/authorize redirect too.
+  // Allow only the origin of the callback validated against the signed client.
+  const callbackOrigin = new URL(approvedRedirectUri).origin;
+
   return new Response(body, {
     status,
     headers: {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store",
       "content-security-policy":
-        "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'",
+        `default-src 'none'; style-src 'unsafe-inline'; form-action 'self' ${callbackOrigin}; base-uri 'none'; frame-ancestors 'none'`,
       "x-content-type-options": "nosniff",
     },
   });
@@ -363,7 +367,7 @@ export async function handleStaffAuthorizationGet(
     return validation;
   }
 
-  return html(authorizationHtml(validation));
+  return html(authorizationHtml(validation), validation.redirectUri);
 }
 
 export async function handleStaffAuthorizationPost(
@@ -413,6 +417,7 @@ export async function handleStaffAuthorizationPost(
         validation,
         "Invalid credentials or this account cannot authorize Staff MCP.",
       ),
+      validation.redirectUri,
       401,
     );
   }
