@@ -21,13 +21,7 @@ import {
   FieldLabel,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { StatusFilterSelect } from "@/components/shared/status-filter-select";
 import {
   Table,
   TableBody,
@@ -137,32 +131,13 @@ export function AppointmentListView({
           <FieldGroup className="grid gap-3 md:grid-cols-[minmax(12rem,0.7fr)_minmax(12rem,0.7fr)_auto] md:items-end">
             <Field>
               <FieldLabel htmlFor="appointment-status">Status</FieldLabel>
-              <Select
-                name="status"
+              <StatusFilterSelect
+                id="appointment-status"
+                label="Appointment status"
+                descriptionId="appointment-status-description"
                 defaultValue={projection.status ?? "ALL"}
-                itemToStringLabel={(value) =>
-                  value === "ALL"
-                    ? "All statuses"
-                    : String(value).replaceAll("_", " ")
-                }
-              >
-                <SelectTrigger
-                  id="appointment-status"
-                  className="w-full"
-                  aria-label="Appointment status"
-                  aria-describedby="appointment-status-description"
-                >
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="ALL">All statuses</SelectItem>
-                  {APPOINTMENT_STATUS_FILTERS.map((status) => (
-                    <SelectItem key={status} value={status}>
-                      {status.replaceAll("_", " ")}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+                statuses={APPOINTMENT_STATUS_FILTERS}
+              />
               <FieldDescription id="appointment-status-description">
                 Status is checked after authorization.
               </FieldDescription>

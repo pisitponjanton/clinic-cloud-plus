@@ -21,13 +21,7 @@ import {
   FieldLabel,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { StatusFilterSelect } from "@/components/shared/status-filter-select";
 import {
   Table,
   TableBody,
@@ -42,16 +36,12 @@ import {
   type QueueListProjection,
   type QueueReadItem,
 } from "@/src/queue/read-projection";
-import type { QueueStatus, UserRole } from "@/src/types/private-data";
+import type { UserRole } from "@/src/types/private-data";
 
 type QueueListViewProps = {
   role: Exclude<UserRole, "PATIENT">;
   projection: QueueListProjection;
 };
-
-function statusLabel(status: QueueStatus): string {
-  return status.replaceAll("_", " ");
-}
 
 function QueueMobileRow({ item }: { item: QueueReadItem }) {
   return (
@@ -161,30 +151,13 @@ export function QueueListView({
           <FieldGroup className="grid gap-3 md:grid-cols-[minmax(12rem,0.7fr)_minmax(12rem,0.7fr)_auto] md:items-end">
             <Field>
               <FieldLabel htmlFor="queue-status">Status</FieldLabel>
-              <Select
-                name="status"
+              <StatusFilterSelect
+                id="queue-status"
+                label="Queue status"
+                descriptionId="queue-status-description"
                 defaultValue={projection.status ?? "ALL"}
-                itemToStringLabel={(value) =>
-                  value === "ALL" ? "All statuses" : statusLabel(value as QueueStatus)
-                }
-              >
-                <SelectTrigger
-                  id="queue-status"
-                  className="w-full"
-                  aria-label="Queue status"
-                  aria-describedby="queue-status-description"
-                >
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="ALL">All statuses</SelectItem>
-                  {QUEUE_STATUS_FILTERS.map((status) => (
-                    <SelectItem key={status} value={status}>
-                      {statusLabel(status)}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+                statuses={QUEUE_STATUS_FILTERS}
+              />
               <FieldDescription id="queue-status-description">
                 Includes only queue entries visible to this role.
               </FieldDescription>
