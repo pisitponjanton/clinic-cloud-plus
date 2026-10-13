@@ -312,6 +312,7 @@ function authorizationHtml(
   <main>
     <h1>Authorize Staff MCP</h1>
     <p>Sign in with an OWNER, STAFF, DOCTOR, or NURSE demo account and grant this MCP client access to the authenticated Staff MCP scope.</p>
+    <p class="note"><strong>Demo password:</strong> <code>12345678</code> for all personnel demo accounts. If your browser autofills a saved password, replace it with this demo password.</p>
     ${errorMessage ? `<div class="error" role="alert">${escapeHtml(errorMessage)}</div>` : ""}
     <form method="post" action="/oauth/authorize">
       ${hidden("client_id", values.clientId)}
@@ -320,8 +321,14 @@ function authorizationHtml(
       ${hidden("code_challenge", values.codeChallenge)}
       ${hidden("scope", values.scope)}
       <label>Email
-        <input name="email" type="email" autocomplete="username" required />
+        <input name="email" type="email" list="personnel-demo-accounts" autocomplete="username" required />
       </label>
+      <datalist id="personnel-demo-accounts">
+        <option value="owner@cliniccloud.demo"></option>
+        <option value="staff@cliniccloud.demo"></option>
+        <option value="doctor@cliniccloud.demo"></option>
+        <option value="nurse@cliniccloud.demo"></option>
+      </datalist>
       <label>Password
         <input name="password" type="password" autocomplete="current-password" required />
       </label>

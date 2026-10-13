@@ -206,7 +206,35 @@ describe("Staff MCP OAuth-compatible auth foundation", () => {
 
     expect(html).toContain("Authorize Staff MCP");
     expect(html).toContain("Authorize Clinic Cloud + Staff MCP");
+    expect(html).toContain("Demo password:");
+    expect(html).toContain("12345678");
+    expect(html).toContain('list="personnel-demo-accounts"');
     expect(html).not.toContain("access_token");
+  });
+
+  it("rejects a wrong autofilled password without dropping the demo login guidance", async () => {
+    const clientId = await registerClient();
+    const response = await handleStaffAuthorizationPost(
+      new Request("http://localhost/oauth/authorize", {
+        method: "POST",
+        body: new URLSearchParams({
+          client_id: clientId,
+          redirect_uri: REDIRECT_URI,
+          code_challenge: CODE_CHALLENGE,
+          email: "owner@cliniccloud.demo",
+          password: "incorrect-saved-password",
+        }),
+      }),
+      TEST_SECRET,
+    );
+
+    expect(response.status).toBe(401);
+    expect(response.headers.get("location")).toBeNull();
+    const html = await response.text();
+    expect(html).toContain("Invalid credentials or this account cannot authorize Staff MCP.");
+    expect(html).toContain("Demo password:");
+    expect(html).toContain("If your browser autofills a saved password");
+    expect(html).not.toContain("incorrect-saved-password");
   });
 
   it.each([
